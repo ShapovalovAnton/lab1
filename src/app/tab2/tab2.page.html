@@ -1,0 +1,41 @@
+<app-my-header name="Лабораторна робота №1">
+
+</app-my-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-header>
+    <ion-card-title>Завдання 2</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>
+      На заданому проміжку чисел [a, b] знайдіть кількість чисел, які
+      при діленні на 7 дають в остачі 4. Потрібно вивести як самі числа так і
+      результати обрахунку.
+      <ion-item>
+        <ion-input
+        Label="Ліва межа"
+        LabelPlacement="stacked"
+        type="number"
+        id="a"
+        #Inputa
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+        Label="Права межа"
+        LabelPlacement="stacked"
+        type="number"
+        id="b"
+        #Inputb
+        ></ion-input>
+      </ion-item>
+      <ion-button
+      expand="block"
+      (click)="calculate(Inputa.value, Inputb.value)">
+      Розрахунок</ion-button>
+      <ion-item>
+        <p>Відповідь: {{task2}}</p>
+      </ion-item>
+    </p>
+  </ion-card-content>
+</ion-content>

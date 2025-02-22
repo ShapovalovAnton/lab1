@@ -1,0 +1,50 @@
+<app-my-header name="Лабораторна робота №1">
+
+</app-my-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-header>
+    <ion-card-title>Завдання 1</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>
+      Задано три числа. Якщо всі вони парні, то знайти їх добуток. В
+      іншому випадку – суму їхніх квадратів, якщо сума їхніх перших цифр
+      непарна.
+      <ion-item>
+        <ion-input
+        Label="Перше число"
+        LabelPlacement="stacked"
+        type="number"
+        id="a"
+        #Inputa
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+        Label="Друге число"
+        LabelPlacement="stacked"
+        type="number"
+        id="b"
+        #Inputb
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+        Label="Трете число"
+        LabelPlacement="stacked"
+        type="number"
+        id="с"
+        #Inputc
+        ></ion-input>
+      </ion-item>
+      <ion-button
+      expand="block"
+      (click)="calculate(Inputa.value, Inputb.value, Inputc.value)">
+      Розрахунок</ion-button>
+      <ion-item>
+        <p>Результат обчислення {{d}}</p>
+      </ion-item>
+    </p>
+  </ion-card-content>
+</ion-content>

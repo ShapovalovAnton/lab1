@@ -1,0 +1,42 @@
+<app-my-header name="Лабораторна робота №1">
+
+</app-my-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card-header>
+    <ion-card-title>Завдання 3</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>
+      Згенерувати матрицю розміром NxN. Знайдіть мінімальне
+      значення серед елементів, що розташовані на парних стовпцях.
+      <ion-item>
+        <ion-input
+        Label="Розмір матриці"
+        LabelPlacement="stacked"
+        type="number"
+        id="n"
+        #Inputn
+        ></ion-input>
+      </ion-item>
+      
+      <ion-button
+      expand="block"
+      (click)="calculate(Inputn.value)">
+      Сформувати масив</ion-button>
+      <ion-item>
+        <ion-grid>
+          <ion-row *ngFor="let i of a">
+            <ion-col *ngFor="let j of i">
+              {{j}}
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-item>
+      <ion-item>
+        <p>Відповідь: {{answer}}</p>
+      </ion-item>
+    </p>
+  </ion-card-content>
+</ion-content>
