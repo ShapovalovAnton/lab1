@@ -1,7 +1,7 @@
 export abstract class HouseholdItem{
     name: String = '';
     material: String = '';
-    durability: number = 0;
+    durability: number = 1;
     constructor(name: String, material: String, durability: number)
     {
         if (!Number.isInteger(durability)) throw new Error('Durability must be an integer.');

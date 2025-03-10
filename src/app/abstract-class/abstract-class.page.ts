@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonCardContent, IonCardTitle, IonCardHeader, IonCard } from '@ionic/angular/standalone';
 import { MyHeaderComponent } from '../my-header/my-header.component';
-import { HouseholdItem } from '../class/abstract/householdItem';
-import { ItemFactory } from '../class/abstract/itemFactory';
+import { HouseholdItem } from './abstract/householdItem';
+import { ItemFactory } from './abstract/itemFactory';
 
 @Component({
   selector: 'app-abstract-class',

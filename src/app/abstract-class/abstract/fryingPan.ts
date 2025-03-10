@@ -1,7 +1,7 @@
 import { HouseholdItem } from "./householdItem";
 
 export class FryingPan extends HouseholdItem{
-    diameter: number = 0;
+    diameter: number = 1;
     constructor(override name: String, override material: String, override durability: number, diameter: number)
     {
         super(name, material, durability);
